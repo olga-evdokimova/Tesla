@@ -9,6 +9,11 @@ body {
 
 .header {
   height: 100vh;
+  position: absolute;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.3);
+  left: 0;
+  right: 0;
 }
 
 .container {
@@ -111,4 +116,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.slider .slick-dots {
+  margin-top: -56px;
+  margin-left: 200px;
+  position: relative;
+  z-index: 6;
+}
+
+.slider .slick-dots button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #292929;
+  font-size: 0;
+}
+
+.slider .slick-dots li {
+  display: inline-block;
+  margin: 0 9.5px;
+}
+
+.slider .slick-active button {
+  background-color: white;
 }

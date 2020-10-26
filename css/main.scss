@@ -9,6 +9,11 @@ body {
 }
 .header {
     height: 100vh;
+    position: absolute; //для того чтоб header был независимым
+    z-index: 5; //для того чтоб header поднялся над слайдером.
+    background: rgba(0, 0, 0, 0.3); //тень над слайдером
+    left: 0;
+    right: 0; //header растянет на всю ширину
 }
 .container {
     max-width: 1220px;
@@ -73,7 +78,7 @@ body {
     }
     // .header-content__btn
     &__btn {
-       // width: 290px;
+        // width: 290px;
         display: inline-block;
         color: #fff;
         background: rgba(255, 255, 255, 0.15);
@@ -88,10 +93,34 @@ body {
 .slider {
     // .slider__item
     &__item {
-        height: 100vh ; //для того чтобы появилась картинка так как див пустой картикна без высоты не появится
+        height: 100vh; //для того чтобы появилась картинка так как див пустой картикна без высоты не появится
         //background-image: url(/images/header/header-slider.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    //классы из слайдера
+    .slick-dots{
+        margin-top: -56px;//поднимаем кнопки вверх
+        margin-left: 200px;
+        position: relative;
+        z-index: 6;
+        button {
+            //обращаемся к кнопкам слайдера
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #292929;
+            font-size: 0; //убрать цифры
+        }
+        li {
+            //располагаем кнопки по горизонтали и добавляем отступы
+            display: inline-block;
+            margin: 0 9.5px;
+        }
+    } 
+    .slick-active button {
+        // обращаемся к активной кнопке
+        background-color: white;
     }
 }
