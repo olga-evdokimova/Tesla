@@ -119,10 +119,10 @@ body {
 }
 
 .slider .slick-dots {
-  margin-top: -56px;
-  margin-left: 200px;
+  margin: -56px auto 0;
   position: relative;
   z-index: 6;
+  max-width: 1200px;
 }
 
 .slider .slick-dots button {
