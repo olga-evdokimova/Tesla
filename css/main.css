@@ -14,6 +14,7 @@ body {
   background: rgba(0, 0, 0, 0.3);
   left: 0;
   right: 0;
+  display: none;
 }
 
 .container {
@@ -111,6 +112,10 @@ body {
   background: #690102;
 }
 
+.slider {
+  display: none;
+}
+
 .slider__item {
   height: 100vh;
   background-repeat: no-repeat;
@@ -140,4 +145,58 @@ body {
 
 .slider .slick-active button {
   background-color: white;
+}
+
+.statistics {
+  margin: 161px 0 100px;
+}
+
+.statistics-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.statistics-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.statistics-item__title {
+  margin-bottom: 19px;
+}
+
+.statistics-item__num {
+  font-family: "Roboto", sans-serif;
+  font-size: 96px;
+  line-height: 112px;
+  margin-bottom: 7px;
+}
+
+.statistics-item__num span {
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 8px;
+}
+
+.statistics-item .statistics-item__num-time {
+  margin-left: 0;
+}
+
+.statistics-item .statistics-item__num-speed::before {
+  content: "+";
+  position: absolute;
+}
+
+.statistics-item__descr {
+  color: #b70021;
 }

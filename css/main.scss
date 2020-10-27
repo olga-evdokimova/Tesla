@@ -7,6 +7,7 @@ body {
     color: #fff;
     background-color: #0b0b0b;
 }
+//=========HEADER===========================
 .header {
     height: 100vh;
     position: absolute; //для того чтоб header был независимым
@@ -14,6 +15,7 @@ body {
     background: rgba(0, 0, 0, 0.3); //тень над слайдером
     left: 0;
     right: 0; //header растянет на всю ширину
+    display: none;
 }
 .container {
     max-width: 1220px;
@@ -90,7 +92,9 @@ body {
         }
     }
 }
+//===========SLIDER=========================
 .slider {
+    display: none;
     // .slider__item
     &__item {
         height: 100vh; //для того чтобы появилась картинка так как див пустой картикна без высоты не появится
@@ -100,14 +104,12 @@ body {
         background-position: center;
     }
     //классы из слайдера
-    .slick-dots{
-        margin: -56px auto 0;//поднимает кнопки вверх.выравнивает весь блок 1200px по центру вьюпорта,кнопки оказываются как бы в контейнере.слева.
+    .slick-dots {
+        margin: -56px auto 0; //поднимает кнопки вверх.выравнивает весь блок 1200px по центру вьюпорта,кнопки оказываются как бы в контейнере.слева.
         position: relative;
         z-index: 6;
-        max-width: 1200px;
-        
-        
-       
+        max-width: 1200px; //контейнер
+
         button {
             //обращаемся к кнопкам слайдера
             width: 15px;
@@ -121,9 +123,53 @@ body {
             display: inline-block;
             margin: 0 9.5px;
         }
-    } 
+    }
     .slick-active button {
         // обращаемся к активной кнопке
         background-color: white;
+    }
+}
+//==========STATISTICS======================
+.statistics {
+    margin: 161px 0 100px; //компенсируем маржины .по макету margin-top 105px + margin-top:-56 у слайдера = 161px
+}
+.statistics-items {
+    display: flex;
+    justify-content: space-around;
+}
+.statistics-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    // .statistics-item__title
+    &__title {
+        margin-bottom: 19px;
+    }
+    // .statistics-item__num
+    &__num {
+        font-family: "Roboto", sans-serif;
+        font-size: 96px;
+        line-height: 112px;
+        margin-bottom: 7px;
+        span {
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            line-height: 28px;
+            margin-left: 8px;
+        }
+    }
+    .statistics-item__num-time {
+        margin-left: 0;//выравнивает расстояние между num и descr в первом item
+    }
+    .statistics-item__num-speed {
+        &::before {
+            content: "+";
+            position: absolute;
+        }
+    }
+    // .statistics-item__descr
+    &__descr {
+        color: #b70021;
     }
 }
