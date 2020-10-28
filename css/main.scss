@@ -80,7 +80,6 @@ body {
     }
     // .header-content__btn
     &__btn {
-        // width: 290px;
         display: inline-block;
         color: #fff;
         background: rgba(255, 255, 255, 0.15);
@@ -246,6 +245,7 @@ body {
 }
 //===========INFO========================
 .info {
+    display: none;
     // .info__img
     &__img {
         margin-bottom: 100px;
@@ -261,12 +261,57 @@ body {
     }
     // .info__num
     &__num {
-        color: #B70021;
+        color: #b70021;
     }
     // .info__text
     &__text {
-       width: 450px;
-       margin-right: 7px;
-       margin-left: 105px;
+        width: 450px;
+        margin-right: 7px;
+        margin-left: 105px;
     }
+}
+//==========FOOTER=======================
+.footer {
+    // .footer__btn
+
+    &__btn {
+        display: inline-block;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid #ffffff;
+        padding: 30px 62px;
+        transition: all 0.5s; //для плавности при нажатии
+        &:hover {
+            background: #690102;
+        }
+        margin: 83px 0 83px 0;
+    }
+
+    // .footer__list
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    // .footer__link
+&__item{
+    padding: 0 10px;
+    border-left: 2px solid #ffffff;
+    &:first-child{
+        border-left: none;
+    }
+}
+    &__link {
+        font-family: Roboto Condensed;
+        font-size: 24px;
+        line-height: 28px;
+        color: #ffffff;
+        
+       
+}
+}
+.footer-btn {
+    text-align: center;
 }
