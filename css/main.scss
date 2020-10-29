@@ -15,12 +15,20 @@ body {
     background: rgba(0, 0, 0, 0.3); //тень над слайдером
     left: 0;
     right: 0; //header растянет на всю ширину
-    
 }
 .container {
     max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
+    @media (max-width: 1200px) {
+        max-width: 970px;
+    }
+    @media (max-width: 992px) {
+        max-width: 750px;
+    }
+    @media (max-width: 767px) {
+        max-width: none;
+    }
 }
 .header-top {
     display: flex;
@@ -78,22 +86,20 @@ body {
         width: 284px;
         margin-bottom: 25px;
     }
-    // .header-content__btn
-    &__btn {
-        display: inline-block;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid #ffffff;
-        padding: 30px 62px;
-        transition: all 0.5s; //для плавности при нажатии
-        &:hover {
-            background: #690102;
-        }
+}
+.button {
+    display: inline-block;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid #ffffff;
+    padding: 30px 62px;
+    transition: all 0.5s; //для плавности при нажатии
+    &:hover {
+        background: #690102;
     }
 }
 //===========SLIDER=========================
 .slider {
-    
     // .slider__item
     &__item {
         height: 100vh; //для того чтобы появилась картинка так как див пустой картикна без высоты не появится
@@ -130,16 +136,13 @@ body {
 }
 //==========STATISTICS======================
 .statistics {
- 
     margin: 161px 0 100px; //компенсируем маржины .по макету margin-top 105px + margin-top:-56 у слайдера = 161px
 }
 .statistics-items {
-   
     display: flex;
     justify-content: space-around;
 }
 .statistics-item {
-    
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -177,13 +180,11 @@ body {
 }
 //===========VIDEO==========================
 .video {
-    
     margin: 100px 0 100px 0;
 }
 
 //==========ABOUT======================
 .about {
-    
     // .about__inner
     &__inner {
         height: 900px;
@@ -245,7 +246,6 @@ body {
 }
 //===========INFO========================
 .info {
-    
     // .info__img
     &__img {
         margin-bottom: 100px;
@@ -272,46 +272,30 @@ body {
 }
 //==========FOOTER=======================
 .footer {
-    // .footer__btn
-
-    &__btn {
-        display: inline-block;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid #ffffff;
-        padding: 30px 62px;
-        transition: all 0.5s; //для плавности при нажатии
-        &:hover {
-            background: #690102;
-        }
-        margin: 83px 0 83px 0;
-    }
-
-    // .footer__list
+    background: #690102;
 
     &__list {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 
     // .footer__link
-&__item{
-    padding: 0 10px;
-    border-left: 2px solid #ffffff;
-    &:first-child{
-        border-left: none;
+    &__item {
+        padding: 0 10px;
+        border-left: 2px solid #ffffff;
+        &:first-child {
+            border-left: none;
+        }
     }
-}
     &__link {
         font-family: Roboto Condensed;
         font-size: 24px;
         line-height: 28px;
         color: #ffffff;
-        
-       
-}
+    }
 }
 .footer-btn {
     text-align: center;
+    padding: 83px 0;
 }
