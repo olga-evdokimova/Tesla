@@ -14,7 +14,6 @@ body {
   background: rgba(0, 0, 0, 0.3);
   left: 0;
   right: 0;
-  display: none;
 }
 
 .container {
@@ -112,10 +111,6 @@ body {
   background: #690102;
 }
 
-.slider {
-  display: none;
-}
-
 .slider__item {
   height: 100vh;
   background-repeat: no-repeat;
@@ -148,12 +143,10 @@ body {
 }
 
 .statistics {
-  display: none;
   margin: 161px 0 100px;
 }
 
 .statistics-items {
-  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,7 +155,6 @@ body {
 }
 
 .statistics-item {
-  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,12 +197,7 @@ body {
 }
 
 .video {
-  display: none;
   margin: 100px 0 100px 0;
-}
-
-.about {
-  display: none;
 }
 
 .about__inner {
@@ -284,10 +271,6 @@ body {
   line-height: 42px;
   color: #b70021;
   text-align: end;
-}
-
-.info {
-  display: none;
 }
 
 .info__img {
