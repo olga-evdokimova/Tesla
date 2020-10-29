@@ -317,32 +317,27 @@ body {
 
 .footer {
   background: #690102;
+  text-align: center;
 }
 
-.footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 20px;
+.footer-copy {
+  padding-bottom: 23px;
 }
 
-.footer__item {
+.footer-copy li {
+  display: inline-block;
   padding: 0 10px;
-  border-left: 2px solid #ffffff;
+  position: relative;
 }
 
-.footer__item:first-child {
-  border-left: none;
+.footer-copy li + li::before {
+  content: "|";
+  position: absolute;
+  left: -5px;
 }
 
-.footer__link {
-  font-family: Roboto Condensed;
-  font-size: 24px;
-  line-height: 28px;
-  color: #ffffff;
+.footer-copy a {
+  color: white;
 }
 
 .footer-btn {

@@ -273,28 +273,27 @@ body {
 //==========FOOTER=======================
 .footer {
     background: #690102;
-
-    &__list {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    // .footer__link
-    &__item {
+    text-align: center;
+    
+}
+.footer-copy {
+    padding-bottom: 23px;
+    & li {
+        display: inline-block;
         padding: 0 10px;
-        border-left: 2px solid #ffffff;
-        &:first-child {
-            border-left: none;
+        position: relative;
+        & + li::before{
+            content: "|";
+           position: absolute;
+           left: -5px;
         }
+        
     }
-    &__link {
-        font-family: Roboto Condensed;
-        font-size: 24px;
-        line-height: 28px;
-        color: #ffffff;
+    & a {
+        color: white;
     }
 }
+
 .footer-btn {
     text-align: center;
     padding: 83px 0;
