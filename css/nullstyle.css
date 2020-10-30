@@ -72,6 +72,10 @@ a:hover {
 
 ul li {
   list-style: none;
+  
+}
+a {
+  color: inherit;
 }
 
 img {
