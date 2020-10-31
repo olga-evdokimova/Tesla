@@ -28,18 +28,6 @@ body {
   }
 }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
-}
-
 .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,13 +119,13 @@ body {
 }
 
 .menu {
-  background-color: #0B0B0B;
+  background-color: #0b0b0b;
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   z-index: 7;
 }
 
@@ -182,7 +170,7 @@ body {
 .close-btn {
   width: 50px;
   height: 50px;
-  background-color: #0B0B0B;
+  background-color: #0b0b0b;
   position: absolute;
   top: 31px;
   right: 15px;
@@ -303,69 +291,28 @@ body {
   margin: 100px 0 100px 0;
 }
 
-.about__inner {
-  height: 900px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.about__inner-row {
   margin-bottom: 100px;
-}
-
-.about__speed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 60px;
 }
 
 .about__speed-title {
   font-size: 36px;
   line-height: 42px;
   color: #b70021;
-  margin-bottom: 101px;
+  padding-bottom: 101px;
 }
 
 .about__speed-text {
-  width: 50%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-}
-
-.about__advantage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.about__advantage-img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 400px;
-          flex: 0 0 400px;
-  margin-bottom: 100px;
+  max-width: 303px;
 }
 
 .about__advantage-text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
   padding-top: 94px;
 }
 
@@ -376,8 +323,13 @@ body {
   text-align: end;
 }
 
+.about-descr {
+  max-width: 570px;
+  width: 100%;
+}
+
 .info__img {
-  margin-bottom: 100px;
+  min-width: 100%;
 }
 
 .info__items {
@@ -387,7 +339,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 
 .info__num {
