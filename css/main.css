@@ -332,8 +332,8 @@ body {
   width: 100%;
 }
 
-.info__img {
-  min-width: 100%;
+.info__img img {
+  max-width: 100%;
 }
 
 .info__items {

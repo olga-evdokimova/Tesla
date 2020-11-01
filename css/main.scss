@@ -295,8 +295,8 @@ body {
 //===========INFO========================
 .info {
     // .info__img
-    &__img {
-        min-width: 100%;
+    &__img img {
+        max-width: 100%; 
     }
     // .info__items
     &__items {

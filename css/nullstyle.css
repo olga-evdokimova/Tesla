@@ -1,4 +1,3 @@
-
 /*Обнуление*/
 * {
   padding: 0;
@@ -72,7 +71,6 @@ a:hover {
 
 ul li {
   list-style: none;
-  
 }
 a {
   color: inherit;
@@ -80,6 +78,7 @@ a {
 
 img {
   vertical-align: top;
+  /* max-width: 100%;  все картинки будут автоматически уменьшаться с изменеием ширины экрана*/
 }
 
 h1,
