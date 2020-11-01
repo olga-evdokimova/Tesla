@@ -7,6 +7,10 @@ body {
     color: #fff;
     background-color: #0b0b0b;
 }
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
 //=========HEADER===========================
 .header {
     height: 100vh;
