@@ -7,7 +7,7 @@ body {
     color: #fff;
     background-color: #0b0b0b;
 }
-.wrapper{
+.wrapper {
     //min-height: 100%;
     overflow: hidden;
 }
@@ -19,6 +19,8 @@ body {
     background: rgba(0, 0, 0, 0.3); //тень над слайдером
     left: 0;
     right: 0; //header растянет на всю ширину
+    @media (max-width: 420px) {
+    }
 }
 .container {
     max-width: 1220px;
@@ -27,20 +29,31 @@ body {
     @media (max-width: 1200px) {
         max-width: 970px;
     }
-    // @media (max-width: 992px) {
-    //     max-width: 750px;
-    // }
-    // @media (max-width: 767px) {
-    //     max-width: none;
-    // }
+    @media (max-width: 992px) {
+        max-width: 750px;
+    }
+    @media (max-width: 800px) {
+      max-width: 500px;
+     }
+     @media (max-width: 550px) {
+        max-width:none;
+       }
+   
 }
 .header-top {
     display: flex;
     justify-content: space-between;
 }
 .logo {
-    padding-top: 36px;
-    margin-bottom: 28px;
+    // padding-top: 36px;
+    // margin-bottom: 28px;
+    padding: 36px 0 28px;
+    @media (max-width: 550px) {
+        padding-left: 16px;
+        img {
+            max-width: 200px;
+        }
+    }
 }
 .header-btn {
     width: 60px;
@@ -50,6 +63,9 @@ body {
     background: rgba(255, 255, 255, 0.1);
     position: relative;
     cursor: pointer;
+    @media (max-width: 550px) {
+        margin: 26px 26px 0 0;
+    }
     span {
         width: 36px;
         border-top: 2px solid #ffffff;
@@ -78,18 +94,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @media (max-width: 767px) {
+        align-items: center;
+    }
     // .header-content__title
     &__title {
         font-family: Roboto;
         font-weight: normal;
         font-size: 96px;
-        line-height: 112px;
+        line-height: 1.16;
         margin-bottom: 40px;
+        @media (max-width: 550px) {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
     }
     // .header-content__text
     &__text {
         width: 284px;
         margin-bottom: 25px;
+        @media (max-width: 767px) {
+            text-align: center;
+        }
     }
 }
 .button {
@@ -117,21 +143,32 @@ body {
         height: 100vh;
         display: flex;
         align-items: center;
-
+        @media (max-width: 550px) {
+            margin-left: 16px;
+        }
         a {
             font-size: 48px;
-            line-height: 56px;
+            line-height:1.16;
             font-weight: bold;
             padding: 30px 15px 14px 0;
             display: inline-block;
             border-bottom: 3px solid #b70021;
             min-width: 368px;
+            @media (max-width: 767px){
+                font-size:36px ;
+            }
+            @media (max-width: 550px) {
+                font-size: 24px;
+                padding: 20px 15px 10px 0;
+                min-width: 270px;
+            }
             &:hover {
                 border-color: #fff;
                 transition: all 0.5s; //плавный переход при нажатии
                 color: #b70021;
                 transform: scale(1.2); //масштабирование при нажатии
                 margin-left: 37px; //масштабируется вправо не заходя на левый край
+              
             }
         }
     }
@@ -151,6 +188,9 @@ body {
     top: 31px;
     right: 15px; //сдвигаем на 15px из за падинга у контейнера
     cursor: pointer;
+    @media (max-width: 550px) {
+        margin-right: 26px;
+    }
     &::after {
         content: "";
         width: 70px;
@@ -188,7 +228,16 @@ body {
         position: relative;
         z-index: 6;
         max-width: 1200px; //контейнер
-
+        @media (max-width: 1200px) {
+            max-width: 970px;
+        }
+        @media (max-width: 992px) {
+            max-width: 750px;
+        }
+        @media (max-width: 767px) {
+            max-width: 420px;
+            text-align: center;
+        }
         button {
             //обращаемся к кнопкам слайдера
             width: 15px;
@@ -296,8 +345,7 @@ body {
 .info {
     // .info__img
     &__img img {
-        max-width: 100%;//для того чтоб картинка уменьшалась и увеличивалась при изменении ширины экрана
-        
+        max-width: 100%; //для того чтоб картинка уменьшалась и увеличивалась при изменении ширины экрана
     }
     // .info__items
     &__items {

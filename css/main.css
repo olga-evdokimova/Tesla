@@ -32,6 +32,24 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    max-width: none;
+  }
+}
+
 .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,8 +60,16 @@ body {
 }
 
 .logo {
-  padding-top: 36px;
-  margin-bottom: 28px;
+  padding: 36px 0 28px;
+}
+
+@media (max-width: 550px) {
+  .logo {
+    padding-left: 16px;
+  }
+  .logo img {
+    max-width: 200px;
+  }
 }
 
 .header-btn {
@@ -54,6 +80,12 @@ body {
   background: rgba(255, 255, 255, 0.1);
   position: relative;
   cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .header-btn {
+    margin: 26px 26px 0 0;
+  }
 }
 
 .header-btn span {
@@ -95,17 +127,38 @@ body {
           align-items: flex-start;
 }
 
+@media (max-width: 767px) {
+  .header-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header-content__title {
   font-family: Roboto;
   font-weight: normal;
   font-size: 96px;
-  line-height: 112px;
+  line-height: 1.16;
   margin-bottom: 40px;
+}
+
+@media (max-width: 550px) {
+  .header-content__title {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
 }
 
 .header-content__text {
   width: 284px;
   margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .header-content__text {
+    text-align: center;
+  }
 }
 
 .button {
@@ -143,14 +196,34 @@ body {
           align-items: center;
 }
 
+@media (max-width: 550px) {
+  .menu__list {
+    margin-left: 16px;
+  }
+}
+
 .menu__list a {
   font-size: 48px;
-  line-height: 56px;
+  line-height: 1.16;
   font-weight: bold;
   padding: 30px 15px 14px 0;
   display: inline-block;
   border-bottom: 3px solid #b70021;
   min-width: 368px;
+}
+
+@media (max-width: 767px) {
+  .menu__list a {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu__list a {
+    font-size: 24px;
+    padding: 20px 15px 10px 0;
+    min-width: 270px;
+  }
 }
 
 .menu__list a:hover {
@@ -179,6 +252,12 @@ body {
   top: 31px;
   right: 15px;
   cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .close-btn {
+    margin-right: 26px;
+  }
 }
 
 .close-btn::after {
@@ -218,6 +297,25 @@ body {
   position: relative;
   z-index: 6;
   max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+  .slider .slick-dots {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider .slick-dots {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider .slick-dots {
+    max-width: 420px;
+    text-align: center;
+  }
 }
 
 .slider .slick-dots button {
