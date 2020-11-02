@@ -11,6 +11,7 @@ body {
     //min-height: 100%;
     overflow: hidden;
 }
+
 //=========HEADER===========================
 .header {
     height: 100vh;
@@ -44,7 +45,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.logo {
+.logo {display: none;
     // padding-top: 36px;
     // margin-bottom: 28px;
     padding: 36px 0 28px;
@@ -259,11 +260,21 @@ body {
 }
 //==========STATISTICS======================
 .statistics {
-    margin: 161px 0 100px; //компенсируем маржины .по макету margin-top 105px + margin-top:-56 у слайдера = 161px
+    margin: 161px 0 100px 0; //компенсируем маржины .по макету margin-top 105px + margin-top:-56 у слайдера = 161px
+    @media (max-width: 992px) {
+          margin: 84px 0 50px 0;
+    }
+   
 }
 .statistics-items {
     display: flex;
     justify-content: space-around;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;   
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
 }
 .statistics-item {
     display: flex;
@@ -273,13 +284,21 @@ body {
     // .statistics-item__title
     &__title {
         margin-bottom: 19px;
+        @media (max-width: 767px) {
+          padding-top: 20px;
+          margin-bottom: 10px;
+        }
     }
     // .statistics-item__num
     &__num {
         font-family: "Roboto", sans-serif;
         font-size: 96px;
-        line-height: 112px;
+        line-height: 1.16;
         margin-bottom: 7px;
+        @media (max-width: 992px) {
+            font-size: 64px;
+        }
+       
         span {
             font-family: Roboto Condensed;
             font-size: 24px;
@@ -303,7 +322,10 @@ body {
 }
 //===========VIDEO==========================
 .video {
-    margin: 100px 0 100px 0;
+    margin-bottom: 100px;
+    @media (max-width: 992px) {
+        margin-bottom: 50px;
+    }
 }
 
 //==========ABOUT======================
