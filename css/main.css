@@ -432,7 +432,7 @@ body {
 .statistics-item__num span {
   font-family: Roboto Condensed;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   margin-left: 8px;
 }
 
@@ -443,6 +443,12 @@ body {
 .statistics-item .statistics-item__num-speed::before {
   content: "+";
   position: absolute;
+}
+
+@media (max-width: 420px) {
+  .statistics-item .statistics-item__num-speed::before {
+    margin-top: -8px;
+  }
 }
 
 .statistics-item__descr {
