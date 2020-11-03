@@ -50,7 +50,7 @@ body {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 480px) {
   .container {
     max-width: none;
   }
@@ -84,7 +84,7 @@ body {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 480px) {
   .logo {
     padding: 10px 0;
   }
@@ -106,7 +106,7 @@ body {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 480px) {
   .header-btn {
     margin-top: 10px;
   }
@@ -180,7 +180,7 @@ body {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 480px) {
   .header-content__title {
     margin-bottom: 5px;
     font-size: 50px;
@@ -198,7 +198,7 @@ body {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 480px) {
   .header-content__text {
     width: 100%;
     margin-bottom: 10px;
@@ -221,7 +221,7 @@ body {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 480px) {
   .button {
     padding: 20px 50px;
   }
@@ -282,7 +282,7 @@ body {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 480px) {
   .menu__list a {
     padding: 15px;
     font-size: 18px;
@@ -388,7 +388,7 @@ body {
   }
 }
 
-@media (max-height: 420px) {
+@media (max-height: 480px) {
   .slider .slick-dots {
     margin: -46px auto 0;
   }
