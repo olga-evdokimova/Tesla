@@ -39,6 +39,9 @@ body {
     @media (max-width: 550px) {
         max-width: none;
     }
+    @media (max-height: 420px) {
+        max-width: none;
+    }
 }
 .header-top {
     display: flex;
@@ -48,14 +51,19 @@ body {
     // padding-top: 36px;
     // margin-bottom: 28px;
     padding: 36px 0 28px;
+
     @media (max-width: 550px) {
         padding-left: 16px;
+
         img {
             max-width: 200px;
             @media (max-width: 360px) {
                 max-width: 150px;
             }
         }
+    }
+    @media (max-height: 420px) {
+        padding: 10px 0;
     }
 }
 .header-btn {
@@ -68,6 +76,9 @@ body {
     cursor: pointer;
     @media (max-width: 550px) {
         margin: 26px 26px 0 0;
+    }
+    @media (max-height: 420px) {
+        margin-top: 10px;
     }
     span {
         width: 36px;
@@ -114,6 +125,10 @@ body {
         @media (max-width: 360px) {
             font-size: 60px;
         }
+        @media (max-height: 420px) {
+            margin-bottom: 5px;
+            font-size: 50px;
+        }
     }
     // .header-content__text
     &__text {
@@ -121,6 +136,10 @@ body {
         margin-bottom: 25px;
         @media (max-width: 767px) {
             text-align: center;
+        }
+        @media (max-height: 420px) {
+            width: 100%;
+            margin-bottom: 10px;
         }
     }
 }
@@ -131,9 +150,12 @@ body {
     border: 1px solid #ffffff;
     padding: 30px 62px;
     transition: all 0.5s; //для плавности при нажатии
-    @media (max-width: 550px){
+    @media (max-width: 550px) {
         padding: 25px 50px;
-       }
+    }
+    @media (max-height: 420px) {
+        padding: 20px 50px;
+    }
     &:hover {
         background: #690102;
     }
@@ -155,6 +177,7 @@ body {
         @media (max-width: 550px) {
             margin-left: 16px;
         }
+
         a {
             font-size: 48px;
             line-height: 1.16;
@@ -170,6 +193,10 @@ body {
                 font-size: 24px;
                 padding: 20px 15px 10px 0;
                 min-width: 270px;
+            }
+            @media (max-height: 420px) {
+                padding: 15px;
+                font-size: 18px;
             }
             &:hover {
                 border-color: #fff;
@@ -198,6 +225,10 @@ body {
     cursor: pointer;
     @media (max-width: 550px) {
         margin-right: 26px;
+    }
+    @media (max-height: 420px) {
+        top: 10px;
+        right: 10px;
     }
     &::after {
         content: "";
@@ -245,6 +276,9 @@ body {
         @media (max-width: 767px) {
             max-width: 420px;
             text-align: center;
+        }
+        @media (max-height: 420px) {
+            margin: -46px auto 0;
         }
         button {
             //обращаемся к кнопкам слайдера
@@ -306,7 +340,7 @@ body {
             font-size: 64px;
         }
         @media (max-width: 420px) {
-           font-size: 34px;
+            font-size: 34px;
         }
         span {
             font-family: Roboto Condensed;
@@ -323,8 +357,8 @@ body {
             content: "+";
             position: absolute;
             @media (max-width: 420px) {
-              margin-top: -8px;
-             }
+                margin-top: -8px;
+            }
         }
     }
     // .statistics-item__descr
@@ -442,11 +476,10 @@ body {
         justify-content: space-between;
         margin: 100px 0;
         @media (max-width: 1200px) {
-          flex-wrap: wrap;  
-          justify-content: center;
-          margin: 50px 0;
-        } 
-        
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+        }
     }
     // .info__item
     &__item {
@@ -460,22 +493,21 @@ body {
         width: 450px;
         margin-right: 7px;
         margin-left: 105px;
-        @media (max-width: 1200px){
+        @media (max-width: 1200px) {
             margin-left: 50px;
         }
-        @media (max-width: 767px){
-          font-size: 18px;
-          line-height: 1.2; 
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 1.2;
         }
-        @media (max-width:550px){
-           width: 300px;
+        @media (max-width: 550px) {
+            width: 300px;
         }
-        @media (max-width: 400px){
-           width: 250px;
-           margin-left: 30px;
+        @media (max-width: 400px) {
+            width: 250px;
+            margin-left: 30px;
         }
     }
-    
 }
 //==========FOOTER=======================
 .footer {
@@ -484,9 +516,9 @@ body {
 }
 .footer-copy {
     padding-bottom: 23px;
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
         font-size: 18px;
-       }
+    }
     & li {
         display: inline-block;
         padding: 0 10px;
@@ -505,10 +537,10 @@ body {
 .footer-btn {
     text-align: center;
     padding: 83px 0;
-    @media (max-width: 992px){
-       padding: 40px 0;
-       }
-       @media (max-width: 767px){
+    @media (max-width: 992px) {
+        padding: 40px 0;
+    }
+    @media (max-width: 767px) {
         padding: 20px 0;
-       }
+    }
 }
