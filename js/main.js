@@ -6,13 +6,14 @@ $(function () {
         dots: true
     });
 
-    $('.header-btn').on('click', function(){
+    //======== burger
+    $('.header-btn').on('click', function () {
         $('.menu').addClass('active');
 
     });
-    $('.close-btn').on('click', function(){
+    $('.close-btn').on('click', function () {
         $('.menu').removeClass('active');
 
     });
-   
+
 });
